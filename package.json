@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Althara-Labs/althara-contracts#readme",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.0",
     "@nomicfoundation/hardhat-ignition": "^3.0.1",
+    "@nomicfoundation/hardhat-ignition-ethers": "^3.0.1",
     "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.0",
     "@types/chai": "^4.3.20",
     "@types/chai-as-promised": "^8.0.2",
@@ -31,5 +33,8 @@
     "mocha": "^11.7.1",
     "typescript": "~5.8.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
 }
