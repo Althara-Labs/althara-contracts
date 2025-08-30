@@ -4,11 +4,11 @@ export default buildModule("TenderContract", (m) => {
   // Get the deployer account
   const deployer = m.getAccount(0);
   
-  // For testing purposes, we'll use the deployer for all roles
+  // For deployment purposes, we'll use the deployer for all roles
   // In production, these should be different addresses
-  const government = m.getAccount(1);
-  const pauser = m.getAccount(2);
-  const platformWallet = m.getAccount(3);
+  const government = m.getAccount(0); // Use same account as deployer
+  const pauser = m.getAccount(0); // Use same account as deployer
+  const platformWallet = m.getAccount(0); // Use same account as deployer
 
   const tenderContract = m.contract("TenderContract", [
     deployer, // defaultAdmin

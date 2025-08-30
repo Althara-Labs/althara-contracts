@@ -6,8 +6,8 @@ export default buildModule("FileStorageContract", (m) => {
   
   // For testing purposes, we'll use the deployer for all roles
   // In production, these should be different addresses
-  const government = m.getAccount(1);
-  const pauser = m.getAccount(2);
+  const government = m.getAccount(0);
+  const pauser = m.getAccount(0);
 
   // Deploy FileStorageContract
   const fileStorageContract = m.contract("FileStorageContract", [

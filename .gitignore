@@ -5,4 +5,8 @@ artifacts/
 cache/
 types/
 
+# Environment variables
 .env
+
+# Ignition deployment files
+ignition/deployments/

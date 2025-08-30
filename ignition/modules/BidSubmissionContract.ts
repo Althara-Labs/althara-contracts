@@ -6,9 +6,9 @@ export default buildModule("BidSubmissionContract", (m) => {
   
   // For testing purposes, we'll use the deployer for all roles
   // In production, these should be different addresses
-  const government = m.getAccount(1);
-  const pauser = m.getAccount(2);
-  const platformWallet = m.getAccount(3);
+  const government = m.getAccount(0);
+  const pauser = m.getAccount(0);
+  const platformWallet = m.getAccount(0);
 
   // Deploy TenderContract first
   const tenderContract = m.contract("TenderContract", [
